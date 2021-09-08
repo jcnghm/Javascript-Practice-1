@@ -6,6 +6,8 @@ the list and checks that the current name is in the string passed in. The output
 let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 let dog_names = ["Max","HAS","PuRple","dog"]
 
+// Ex 1
+
 function findWords(){
     for(let i = 0; i < dog_names.length; i++){
         if(dog_string.includes(dog_names[i])){
@@ -15,6 +17,29 @@ function findWords(){
     }
 }
 findWords()
+
+// Ex 2
+
+// function findWords(n,s){
+//     return n.filter( element => s.includes(element) ); 
+// }
+
+// console.log(findWords(dog_names,dog_string))
+
+// Ex 3
+
+// function findWords(string, names){
+//     for ( element in string ){
+
+//         if (element in names){
+//             return "Matched dog_name"
+//         }  else {
+//             return "No matches"
+//         } 
+//     }
+// }
+
+// console.log(findWords(dog_string, dog_names))
 
 //Call method here with parameters
 
